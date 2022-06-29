@@ -1,0 +1,41 @@
+.nav{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  height:50px;
+  background-color: $color-nav;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom:50px;
+
+
+  .nav-logo-aces{
+    width:36px;
+    margin-left:13px;
+  }
+
+  .nav-logo-libro{
+    width:136px;
+  }
+  .nav-logo-libro-hidden{
+      display:none;
+  }
+
+  .nav-sound-on{
+    width:26px;
+    margin-right:13px;
+  }
+  .nav-sound-on-hidden{
+    display:none;
+  }
+  .nav-sound-off{
+    width:26px;
+    margin-right:13px;
+  }
+  .nav-sound-off-hidden{
+    display:none;
+  }
+
+}
+
+
+

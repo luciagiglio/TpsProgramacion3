@@ -1,0 +1,78 @@
+
+
+
+.star-container {
+  margin-top: 30px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  img {
+    width: 30px;
+    animation: moveTopStart infinite linear;
+  }
+  .rotate {
+    animation: rotate 1s 1 linear;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0) scale(6);
+    }
+    50% {
+      transform: rotate(160deg) scale(3);
+    }
+    100% {
+      transform: rotate(360deg) scale(1);
+    }
+  }
+  .imgStarsEnd {
+    width: 50px;
+  }
+}
+
+.correct-star {
+  filter: invert(89%) sepia(20%) saturate(3051%) hue-rotate(45deg)
+    brightness(250%) contrast(284%)
+    drop-shadow(2px 1px 1px rgba(67, 241, 51, 0.7));
+
+  animation: moveTopStart 1000ms linear infinite;
+}
+
+.wrong {
+  filter: invert(200%) sepia(90%) saturate(1239%) hue-rotate(336deg)
+    brightness(318%) contrast(150%)
+    drop-shadow(2px 1px 1px rgba(179, 12, 12, 0.7));
+  animation: moveTopStart 1000ms linear infinite;
+}
+
+@keyframes moveTopStart {
+  from {
+    filter: invert(25%) sepia(91%) saturate(2018%) hue-rotate(94deg)
+      brightness(94%) contrast(104%);
+  }
+  to {
+    transform: rotateZ(360deg);
+    filter: invert(44%) sepia(40%) saturate(898%) hue-rotate(71deg)
+      brightness(88%) contrast(90%);
+    transform: scale(0.1);
+  }
+}
+
+@keyframes moveTopStart {
+  0% {
+    transform: translateY(0px);
+    transform: scale(1);
+  }
+  50% {
+    transform: translateY(-2px);
+    transform: scale(1.1);
+  }
+  100% {
+    transform: translateY(0px);
+    transform: scale(1);
+  }
+}

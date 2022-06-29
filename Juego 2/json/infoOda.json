@@ -1,0 +1,66 @@
+    [ 
+        {
+        "imgBook" : "./images/imgGame/knowledge4.png",
+        "titulo": "COMMUNICATION SHEET 1",
+        "chapter": "Chapter 1 & 2",
+        "instructions": "LISTEN AND COMPLETE THE DIALOGUE.",
+        "answer": "answer", 
+        "results": [
+            {
+                "id": 1,
+                "question": "Where are you going, Camille?",
+                "postQuestion": "Where are you going, Camille?",
+                "imagen": "img/cont_puzzle_1.png",
+                "answers": {
+                    "answera": "Is Camille going to visit her cousins?",
+                    "answerc": "I’m going to visit my cousins.",
+                    "answerb": "Camille’s going to visit her cousins."
+                }
+            },
+            {
+                "id": 2,
+                "question": "Are you going to take the train?",
+                "postQuestion": "Are you going to take the train?",
+                "imagen": "img/cont_puzzle_1.png",
+                "answers": {
+                    "answera": "Yes, I do. I usually take the train.",
+                    "answerc": "No, I’m not. I want to walk.",
+                    "answerb": "No, I don’t. I like to walk."
+                }
+            },
+            {
+                "id": 3,
+                "question": "Your cousins live far from here. Why do you want to walk?",
+                "postQuestion": "Your cousins live far from here. Why do you want to walk?",
+                "imagen": "img/cont_puzzle_1.png",
+                "answers": {
+                    "answera": "Because if my body gets healthier, I do exercise regularly.",
+                    "answerc": "Because if you do exercise regularly, your body gets healthier.",
+                    "answerb": "Because you do exercise if your body gets healthier."
+                }
+            },
+            {
+                "id": 4,
+                "question": "That’s a great idea. I should do more exercise, too, but I don’t have time.",
+                "postQuestion": "That’s a great idea. I should do more exercise, too, but I don’t have time.",
+                "imagen": "img/cont_puzzle_1.png",
+                "answers": {
+                    "answera": "We can do something together. Are you going to roller-skate?",
+                    "answerc": "We can do an activity together. How about roller-skating?",
+                    "answerb": "We can try something together. Does she like roller-skating?"
+                }
+            },
+            {
+                "id": 5,
+                "question": "I’d love that! We can meet at the square tomorrow afternoon.",
+                "postQuestion": "I’d love that! We can meet at the square tomorrow afternoon.",
+                "imagen": "img/cont_puzzle_1.png",
+                "answers": {
+                    "answera": "Bye-Bye",
+                    "answerc": "Great! See you then!",
+                    "answerb": "Good! It was amazing!"
+                }
+            }
+        ]
+     }
+]

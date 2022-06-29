@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="/images/logoAces.svg" />
+    <script src="build/index.js" type="module" defer></script>
+    <title>Vocabulary Game 1</title>
+</head>
+
+<body>
+    <div class="loader" id="loader">
+    </div>
+    <div class="container">
+        <div class="nav">
+            <img class="nav-logo-aces" src="images/logos/logo-aces.svg" alt="Logo Aces Educación" >
+            <img class="nav-logo-libro-hidden" id="logo-libro" src="images/logos/logo-libro-xl.svg"
+                alt="Knowledge 4"></img>
+            <img class="nav-sound-on" id="soundOn" src="images/game/sound-on.svg" alt="">
+            <img class="nav-sound-off-hidden" id="soundOff" src="images/game/sound-off.svg" alt="">
+            
+        </div>
+        <div class="info" id="info">
+            <div class="info-container">
+                <img class="tapa-libro" id="imgBook" src="" alt="">
+                <div class="container-datos">
+                    <h1 class="info-title" id="title"></h1>
+                    <h3 class="info-chapter" id="chapter"></h3>
+                    <p class="info-text" id="instructions"></p>
+                    <div class="play-h" id="play">
+                        <div class="circulo">
+                            <div class="circulo-2">
+                            </div>
+                            <img class="svg-play" src="images/game/btnPlay.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="play" id="play2">
+                <div class="circulo">
+                    <div class="circulo-2">
+                    </div>
+                    <img class="svg-play" src="images/game/btnPlay.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="start-game-hidden" id="start-game">
+            <div class="container-question-time">
+                <img class="img-question " src="" id="img-question" alt="">
+                <div class="timer">
+                    <p class="number-question" id="id-question"></p>
+                    <div class="progress-container" id="progress-container">
+                        <div class="progress" id="progress"></div>
+                    </div>
+                </div>
+
+            </div>
+            <ul class="options" id="options">
+            </ul>
+            <div class="star-container" id="star-container">
+            </div>
+
+        </div>
+
+        <div class="game-over-hidden" id="game-over">
+            <div class="container-result">
+                <h1 class="result-title" id="result-title">Score</h1>
+
+                <div class="final-points">
+                    <img class="svg-star-end" src="images/game/star_end.svg" alt="">
+                    <h1 class="points" id="points"></h1>
+                </div>
+
+                <div class="star-points" id="star-points"></div>
+            </div>
+
+            <div class="replay" id="replay">
+                <div class="circulo">
+                    <div class="circulo-2">
+                    </div>
+                    <img class="svg-replay" src="images/game/btn-replay.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

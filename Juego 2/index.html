@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class="notranslate" translate="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="google" content="notranslate" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/logoAces.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="build/index.js" type="module" defer></script>
+    <title>Communication Sheet 1</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="aces-logo">
+        <img id="logo-aces" src="./images/logoAces.svg" alt="" />
+        <div class="img-book img-book--hide" id="imgLogoBook">
+          <img src="images/imgGame/bookKno.svg" alt="" />
+        </div>
+        <img
+          class="sound-img sound-img--hide"
+          id="sound-img"
+          src="./images/imgGame/sound-on.svg"
+          alt=""
+        />
+      </div>
+      <!-- CONTENT INFO GAME -->
+      <div class="container-info-game" id="container-info-game">
+        <div class="info-game">
+          <div class="book-info">
+            <img id="imgBook" alt="" />
+            <div class="info-book">
+              <button class="info-book-btn">Ver libro</button>
+            </div>
+          </div>
+          <div class="detail-info">
+            <section class="data">
+              <h1 id="titulo"></h1>
+              <h2 id="chapter"></h2>
+              <h3 id="instructions"></h3>
+              <div class="answer-option"></div>
+            </section>
+            <section class="btn" id="btn-start">
+              <div class="loader-wrapper">
+                <!-- <span id="starBtn">Loading...</span> -->
+                <img src="images/imgGame/btnPlay.svg" alt="" />
+                <div class="loader">
+                  <div class="loader loader-inner"></div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <!-- CONTENT START GAME -->
+      <div
+        class="container-start-game container-start-game--hide"
+        id="container-start-game"
+      >
+        <section class="user-game">
+          <div class="question-img">
+            <div class="instruction">
+              Listen to the sentence and drag the correct phrase
+            </div>
+            <div class="question">
+              <img src="images/imgGame/imgQuestion/02tablet.png" alt="" />
+              <div class="text-question" id="question"></div>
+              <div class="emptys" id="emptys"></div>
+            </div>
+            <!-- REPRODUCTOR -->
+            <div class="player" id="player">
+              <div class="btn-play">
+                <button id="play" class="btn">
+                  <img class="pad" src="images/imgGame/btnPlay.svg" />
+                </button>
+              </div>
+              <div class="track" id="track">
+                <div class="progress" id="progress"></div>
+                <div class="handler" id="handler"></div>
+              </div>
+            </div>
+          </div>
+          <section class="score-question">
+            <div class="group-answer" id="options-answer">
+              <div class="answer-option">
+                <div class="answer" draggable="true" id="option-one"></div>
+              </div>
+              <div class="answer-option">
+                <div class="answer" draggable="true" id="option-two"></div>
+              </div>
+              <div class="answer-option">
+                <div class="answer" draggable="true" id="option-three"></div>
+              </div>
+            </div>
+
+            <div class="question-counter">
+              <span class="number-counter" id="number-counter">1</span>
+              <span>/</span>
+              <span class="number-counter" id="total-question">4</span>
+            </div>
+            <!-- starts container -->
+            <div class="star-container" id="star-container"></div>
+          </section>
+        </section>
+
+        <!-- count question -->
+      </div>
+      <!-- CONTENT END GAME -->
+      <div
+        class="container-end-game container-end-game--hide"
+        id="container-end-game"
+      >
+        <!-- <div class="img-book">
+          <img src="images/imgGame/bookKno.svg" alt="" />
+        </div> -->
+        <div class="detail-end-game">
+          <div class="text-end-game text-end-game--hide" id="textEndGame">
+            <h2>Tu puntaje</h2>
+          </div>
+          <div class="score-content" id="scoreContent">
+            <span class="score" id="score">1</span>
+            <img
+              class="img-score rotate-star-end"
+              src="images/imgGame/star_end.png"
+              alt=""
+              id="imgTotalScore"
+            />
+            <!-- <Button id="actulizar">Actualizar</Button> -->
+          </div>
+
+          <div class="stars-result" id="stars-resut"></div>
+          <section class="btn" id="btn-end">
+            <div class="loader-wrapper">
+              <!-- <span id="starBtn">Restart</span> -->
+              <img id="starBtn" src="images/imgGame/refresh.svg" alt="" />
+              <div class="loader">
+                <div class="loader loader-inner"></div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <script src="build/game/play.js"></script>
+    </div>
+  </body>
+</html>

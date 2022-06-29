@@ -1,0 +1,178 @@
+.container-end-game {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .img-book {
+    width: 90%;
+    margin-bottom: 10px;
+    text-align: center;
+    img {
+      width: 180px;
+    }
+  }
+  .detail-end-game {
+    width: 90%;
+    border-radius: 35px;
+    // border: solid 4px $color-text-question;
+    background-color: $color-bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .text-end-game {
+      width: 100%;
+      // border-radius: 37px 37px 0 0;
+      // background-color: $color-text-question;
+      text-align: center;
+      padding: 10px 0;
+
+      h2 {
+        margin: 10px;
+        color: $color-stars;
+      }
+    }
+    .score-content {
+      // margin-top: 5px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 800;
+      position: relative;
+      padding-bottom: 20px;
+      span {
+        position: absolute;
+        font-size: 4em;
+        color: $color-btn-text;
+        z-index: 10;
+        animation: moveTopScore 1500ms linear infinite;
+      }
+      img {
+        width: 150px;
+        z-index: 0;
+      }
+      .rotate-star-end {
+        animation: rotateStarEnd 1s 1 linear;
+      }
+    }
+    .stars-result {
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 5px;
+      padding-bottom: 20px;
+      img {
+        width: 25px;
+        animation: rotateStarEnd infinite linear;
+      }
+    }
+  }
+  .btn {
+    margin-bottom: 10px;
+    cursor: pointer;
+    &:hover .loader-wrapper .loader {
+      border-left-color: $color-btnHover-img-hover;
+      cursor: pointer;
+    }
+    &:hover .loader-wrapper .loader .loader-inner {
+      border-top: 4px dashed $color-btnHover-img-hover;
+      border-left: 4px dashed $color-btnHover-img-hover;
+      border-bottom: 4px dashed $color-btnHover-img-hover;
+    }
+    .loader-wrapper {
+      width: 55px;
+      height: 55px;
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      cursor: pointer;
+      span {
+        font-size: 0.6em;
+        color: $color-btn-end;
+        font-weight: 600;
+        position: absolute;
+        //  animation: growTextEnd 0.5s linear infinite;
+        z-index: 100;
+        cursor: pointer;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      img {
+        position: absolute;
+        width: 25px;
+      }
+      .loader {
+        width: 100%;
+        height: 100%;
+        padding: 2px;
+        border: 3.5px solid $color-btn-end1;
+        border-left-color: $color-btn-end;
+        border-radius: 50%;
+        cursor: pointer;
+        animation: rotateBtnStar 10s linear infinite;
+
+        .loader-inner {
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-top: 3.5px dashed $color-btn-end;
+          border-left: 3.5px dashed $color-btn-end;
+          // border-bottom: 3.5px dashed $color-btn-border;
+          border-right: 3.5px dashed $color-btn-end1;
+          animation: rotateBtnStar 7s linear infinite;
+        }
+      }
+    }
+  }
+}
+
+@keyframes rotateStarEnd {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotateBtnStar {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes growTextEnd {
+  0% {
+    color: $color-text-tittle;
+  }
+  50% {
+  }
+  100% {
+    color: $color-text-chapter;
+  }
+}
+
+@keyframes rotateStarEnd {
+  0% {
+    transform: rotate(0) scale(4);
+  }
+  50% {
+    transform: rotate(160deg) scale(2);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+.container-end-game--hide {
+  display: none;
+}

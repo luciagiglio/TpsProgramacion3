@@ -1,0 +1,399 @@
+@media (min-width: 400px) {
+  .container {
+    .container-info-game {
+      .info-game {
+        .detail-info {
+          .data {
+            text-align: center;
+            h1 {
+              font-size: 25px;
+            }
+            h2 {
+              font-size: 20px;
+            }
+            h3 {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 550px) and (max-height: 500px) {
+  .container {
+    .aces-logo {
+      display: none;
+      img {
+        margin: 0 30px;
+      }
+    }
+    background-image: url(../images/imgGame/bgTablet.svg);
+    .container-info-game {
+      width: 100%;
+
+      .info-game {
+        width: 98%;
+
+        flex-direction: row;
+        .book-info {
+          width: 30%;
+          img {
+            width: 150px;
+          }
+        }
+        .detail-info {
+          width: 65%;
+          //background-color: aqua;
+          .data {
+            margin: 0;
+          }
+        }
+      }
+    }
+    .container-start-game {
+      .user-game {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        .question-img {
+          width: 60%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          .question {
+            margin: 0;
+          }
+          .player {
+          }
+        }
+        .score-question {
+          width: 30%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+          .group-answer {
+            flex-direction: column;
+            gap: 20px;
+            .answer-option {
+              height: auto;
+              .answer {
+                margin: 0;
+              }
+            }
+          }
+          .question-counter {
+          }
+        }
+      }
+    }
+    .container-end-game {
+      width: 70%;
+      .detail-end-game {
+        width: 80%;
+        .text-end-game {
+          padding: 5px 0;
+          h2 {
+            margin: 5px;
+          }
+        }
+        .score-content {
+          span {
+            font-size: 3em;
+          }
+          img {
+            width: 100px;
+          }
+        }
+        .stars-result {
+          width: 90%;
+          margin: 10px 0;
+        }
+        .btn {
+          .loader-wrapper {
+            width: 40px;
+            height: 40px;
+            img {
+              width: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 767px) {
+  body {
+    .dot {
+      width: 150px;
+      font-size: 17px;
+      font-weight: 400;
+      padding: 10px;
+    }
+  }
+  .container {
+    .aces-logo {
+      padding: 5px 0;
+      img {
+        margin-left: 30px;
+        width: 45px;
+      }
+      .img-book {
+        img {
+          width: 200px;
+        }
+      }
+      .sound-img {
+        width: 35px;
+      }
+    }
+    background-image: url(../images/imgGame/bgTablet.svg);
+    .container-info-game {
+      width: 100%;
+
+      .info-game {
+        width: 90%;
+
+        flex-direction: row;
+        .book-info {
+          width: 30%;
+          img {
+            width: 150px;
+          }
+        }
+        .detail-info {
+          width: 65%;
+          //background-color: aqua;
+          .data {
+            margin: 0;
+          }
+        }
+      }
+    }
+    .container-start-game {
+      .user-game {
+        width: 70%;
+        .question-img {
+          margin-bottom: 20px;
+          .question {
+            .text-question {
+              width: 200px;
+              font-size: 15px;
+              font-weight: 600;
+              padding: 10px;
+              bottom: 110px;
+              left: 40px;
+            }
+            .emptys {
+              width: 200px;
+              height: 60px;
+              font-size: 15px;
+              font-weight: 600;
+              padding: 10px;
+              bottom: 110px;
+              right: 40px;
+            }
+            .emptysActive {
+              height: auto;
+              padding: 10px;
+              &::before {
+              }
+            }
+            .player {
+            }
+          }
+          .instruction {
+            font-size: 16px;
+          }
+        }
+        .score-question {
+          .group-answer {
+            .answer-option {
+              .answer {
+                width: 150px;
+                font-size: 15px;
+                font-weight: 400;
+                padding: 10px;
+              }
+            }
+          }
+          .question-counter {
+            margin: 20px 0;
+            font-size: 15px;
+          }
+          .star-container {
+            gap: 15px;
+            img {
+              width: 35px;
+            }
+          }
+        }
+      }
+    }
+
+    .container-end-game {
+      width: 60%;
+      .detail-end-game {
+        width: 80%;
+        .score-content {
+          margin: 20px;
+          img {
+            width: 150px;
+          }
+        }
+        .stars-result {
+          width: 100%;
+        }
+        .btn {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1023px) {
+  .container {
+    background-image: url(../images/imgGame/bgDesktop.svg);
+    .aces-logo {
+      img {
+        width: 65px;
+      }
+    }
+    .container-info-game {
+      width: 100%;
+
+      .info-game {
+        width: 60%;
+        padding: 30px 0;
+        .book-info {
+          img {
+            width: 230px;
+          }
+        }
+        .detail-info {
+          width: 65%;
+          //background-color: aqua;
+          .data {
+            text-align: center;
+            h1 {
+              font-size: 30px;
+            }
+            h2 {
+              font-size: 25px;
+            }
+            h3 {
+              font-size: 25px;
+            }
+          }
+        }
+      }
+    }
+    .container-start-game {
+      .user-game {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        .question-img {
+          width: 50%;
+          .question {
+            .text-question {
+              width: 250px;
+              max-width: 360px;
+              font-size: 18px;
+              font-weight: 600;
+              padding: 10px;
+              bottom: 150px;
+              left: 40px;
+            }
+            .emptys {
+              width: 250px;
+              height: 60px;
+              font-size: 18px;
+              font-weight: 600;
+              padding: 10px;
+              bottom: 140px;
+              right: 60px;
+            }
+            .emptysActive {
+              height: auto;
+              padding: 10px;
+              &::before {
+              }
+            }
+            .player {
+            }
+          }
+          .player {
+            padding: 10px 0;
+            .btn-play {
+              .btn {
+                .pad {
+                  width: 20px;
+                }
+              }
+            }
+            .track {
+              width: 90%;
+            }
+          }
+          .instruction {
+            font-size: 19px;
+          }
+        }
+        .score-question {
+          width: 20%;
+          .group-answer {
+            flex-direction: column;
+            .answer-option {
+              .answer {
+                width: 250px;
+                font-size: 17px;
+                font-weight: 400;
+                padding: 10px;
+              }
+            }
+          }
+          .question-counter {
+            margin: 20px 0;
+            font-size: 15px;
+          }
+          .star-container {
+            gap: 15px;
+            img {
+              width: 35px;
+            }
+          }
+        }
+      }
+    }
+    .container-end-game {
+      width: 40%;
+      .detail-end-game {
+        width: 80%;
+        .score-content {
+          margin: 20px;
+          img {
+            width: 150px;
+          }
+        }
+        .stars-result {
+          width: 100%;
+          img {
+            width: 40px;
+          }
+        }
+        .btn {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

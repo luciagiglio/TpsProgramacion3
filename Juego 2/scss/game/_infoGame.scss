@@ -1,0 +1,229 @@
+.aces-logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.116) 0px 1px 3px, rgba(0, 0, 0, 0.178) 0px 1px 3px;
+  img {
+    padding: 5px 0;
+    width: 45px;
+  }
+
+  .img-book {
+    display: block;
+    img {
+      width: 150px;
+    }
+  }
+  .img-book--hide {
+    display: none;
+  }
+  .sound-img {
+    display: block;
+    width: 30px;
+  }
+  .sound-img--hide {
+    display: none;
+  }
+}
+.container-info-game {
+  width: 90%;
+  padding: 30px 0;
+
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .info-game {
+    background-color: $color-bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+    border-radius: 15px;
+    .book-info {
+      width: 150px;
+      transition: all 1s ease;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+      &:hover {
+        transform: translateY(-3px);
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: center;
+        left: center;
+        display: block;
+        width: 130px;
+        height: 100%;
+        // background: linear-gradient(
+        //   to bottom,
+        //   rgba(247, 241, 241, 0.5),
+        //   rgba(82, 79, 77, 0.5)
+        // );
+        border-radius: 10px;
+        transition: all 1s ease;
+        opacity: 0;
+        z-index: 2;
+        transition: all 0.5s ease;
+        opacity: 0;
+      }
+      &:hover::before {
+        opacity: 1;
+      }
+      img {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+        width: 100%;
+        position: relative;
+      }
+      .info-book {
+        width: 100%;
+        position: absolute;
+        z-index: 3;
+        color: #fff;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.5s ease;
+        .info-book-btn {
+          border-radius: 10px;
+          background-color: $color-text-counter;
+          transform: translateY(10px);
+          border: none;
+          width: 60%;
+          padding: 5px;
+          cursor: pointer;
+          transition: all 0.5s ease;
+          color: $color-text-black;
+          &:hover {
+            background-color: $color-text-black;
+            color: $color-btn-text-hover;
+          }
+        }
+      }
+    }
+    .book-info:hover .info-book {
+      opacity: 1;
+    }
+    .detail-info {
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .data {
+        margin: 0 20px;
+        h1 {
+          color: $color-text-tittle;
+          font-size: 20px;
+          font-weight: 600;
+        }
+        h2 {
+          color: $color-text-slogan;
+          font-size: 18px;
+          font-weight: 500;
+          margin-bottom: 15px;
+        }
+        h3 {
+          color: $color-text-slogan;
+          font-size: 15px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  .btn {
+    margin-top: 20px;
+    &:hover .loader-wrapper .loader {
+      border-left-color: $color-btnHover-img-hover;
+      cursor: pointer;
+    }
+    &:hover .loader-wrapper .loader .loader-inner {
+      border-top: 4px dashed $color-btnHover-img-hover;
+      border-left: 4px dashed $color-btnHover-img-hover;
+      border-bottom: 4px dashed $color-btnHover-img-hover;
+      cursor: pointer;
+    }
+    .loader-wrapper {
+      width: 55px;
+      height: 55px;
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      span {
+        font-size: 0.6em;
+        color: $color-text-slogan;
+        font-weight: 600;
+        position: absolute;
+        animation: grow 0.8s linear infinite;
+        z-index: 100;
+        cursor: pointer;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      img {
+        position: absolute;
+        width: 15px;
+      }
+      .loader {
+        width: 100%;
+        height: 100%;
+        padding: 3px;
+        border: 3.5px solid $color-btn-border;
+        border-left-color: $color-btnStart-img;
+        border-radius: 50%;
+        cursor: pointer;
+        animation: rotateBtnStar 10s linear infinite;
+
+        .loader-inner {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-top: 3.5px dashed $color-btnStart-img;
+          border-left: 3.5px dashed $color-btnStart-img;
+          // border-bottom: 3.5px dashed $color-btn-border;
+          border-right: 3.5px dashed $color-btn-border;
+          animation: rotateBtnStar 7s linear infinite;
+        }
+      }
+    }
+    @keyframes rotateBtnStar {
+      0% {
+        transform: rotate(360deg);
+      }
+      100% {
+        transform: rotate(-360deg);
+      }
+    }
+    @keyframes grow {
+      0% {
+        filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(122deg)
+          brightness(94%) contrast(104%);
+      }
+      50% {
+      }
+      100% {
+        filter: sepia(30%) saturate(1877%) hue-rotate(356deg) brightness(104%);
+      }
+    }
+  }
+}
+
+.container-info-game--hide {
+  display: none;
+}
